@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,600&display=swap" rel="stylesheet">
+    <link href="img/ibui.png" rel="icon">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Свойства div</title>
+</head>
+
+<body>
+    <div class="container-fluid header">
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg navbar-light mainmenu" id="obvod">
+
+                <a class="navbar-brand dis" href="index.html">Display</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon line"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mr-auto my-2 my-lg-0 navbar-nav-scroll main-menu" style="max-height: 100px;">
+                        <li class="nav-item active lex">
+                            <a class="nav-link data-target" id="anim" href="index.html">Главная <span
+                                    class="sr-only">(текущая)</span></a>
+                        </li>
+                        <li class="nav-item lex">
+                            <a class="nav-link" href="kontakt.html">Контакты</a>
+                        </li>
+                        <li class="nav-item lex">
+                            <a class="nav-link" href="komandaonas.html">Команда проекта</a>
+                        </li>
+                        <li class="nav-item lex">
+                            <a class="nav-link" href="osnova.html">Элементы</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control mr-2" type="search" placeholder="Поиск..." aria-label="Поиск">
+                        <button class="btn btn-outline-success hr" type="submit"
+                            style="color: #3366ff; border: 1px solid #3366ff;">Поиск</button>
+                    </form>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <div class="container-fluid text-white content pt-5 pb-5">
+        <div class="container main">
+            <div class="row">
+                <div class="col">
+                    <h1 style="padding-top: 10px; text-align: justify;">Свойство display, его типы. Создание таблиц с
+                        помощью div</h1>
+                    <p id="kontent"></p>
+                    <p>Синтаксис:
+                        <code>display: block </code>|<code> inline </code>|<code> inline-block </code>|<code> inline-table </code>|<code> list-item </code>|<code> none </code>|<code> run-in </code>|<code> table </code>|<code> table-caption </code>|<code> table-cell </code>|<code> table-column-group </code>|<code> table-column </code>|<code> table-footer-group </code>|<code> table-header-group </code>|<code> table-row </code>|<code> table-row-group</code>
+                    </p>
+                    <h2 style="padding-left: 220px;">Приложение </h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="container" style="width: 700px; height: 400px;">
+                        <div class="pool col-sm-10 col-md-12 col-lg-12">
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <p class="text col-lg-12 col-md-12">
+
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col bom" style="font-family: 'Lora', serif !important;">
+                    <input type="button" value="block" onclick="block()">
+                    <input type="button" value="inline" onclick="inline()">
+                    <input type="button" value="inline-block" onclick="inline_block()">
+                    <input type="button" value="inline-table" onclick="inline_table()">
+                    <input type="button" value="list-item" onclick="list_item()">
+                    <input type="button" value="none" onclick="none()">
+                    <input type="button" value="run-in" onclick="run_in()">
+                    <input type="button" value="table" onclick="table()">
+                    <input type="button" value="table-caption" onclick="table_caption()">
+                    <input type="button" value="table-cell" onclick="table_cell()">
+                    <input type="button" value="table-column-group" onclick="table_column_group()">
+                    <input type="button" value="table-column" onclick="table_column()">
+                    <input type="button" value="table-footer-group" onclick="table_footer_group()">
+                    <input type="button" value="table-row" onclick="table_row()">
+                    <input type="button" value="table-row-group" onclick="table_row_group()">
+                </div>
+            </div>
+
+
+            <template id="element-template" id="ajara">
+                <div class="el animated1">
+                    <span>
+                        <!--Номер элемента-->
+                    </span>
+                </div>
+            </template>
+            <div class="row">
+                <div class="col col-md-12 col-sm-10 " id="kontent">
+                    <div class="animer">
+                        <p>Свойство <code>display</code> (CSS) определяет тип отображения (<code>display</code>
+                            type) элемента,
+                            имеющий два основных свойства, определяющих генерацию боксов — внешний тип отображения
+                            определяет
+                            расположение бокса в схеме потока (flow layout) и внутренний тип отображения определяет
+                            расположение
+                            дочерних элементов бокса (бокс - это прямоугольная область, являющаяся изображением
+                            элемента).
+                            Когда вы явным образом не задаете свойство display элементу, все равно это свойство
+                            присваивается
+                            ему по умолчанию браузером.
+                            Список возможных значений этого свойства, понимаемый разными браузерами очень короткий —
+                            <code>block, inline, list-item и none.</code> Все остальные допустимые значения
+                            поддерживаются
+                            браузерами выборочно.
+                        </p>
+                        <p>Элемент <code> block</code> Элемент показывается как блочный. Применение этого значения
+                            для
+                            встроенных элементов, например тега span, заставляет его вести подобно блокам — происходит
+                                перенос
+                                строк в начале и в конце содержимого.</p>
+
+                        <p>Элемент <code>inline</code> Элемент отображается как встроенный. Использование блочных
+                            тегов, таких
+                            как <code> div</code> и <code>p</code>, автоматически создает перенос и показывает
+                            содержимое этих тегов с
+                            новой
+                            строки. Значение <code>inline</code> отменяет эту особенность, поэтому содержимое блочных
+                            элементов
+                            начинается с того места, где окончился предыдущий элемент.</p>
+                        <p>Элемент <code> inline-block </code> Это значение генерирует блочный элемент, который
+                            обтекается
+                            другими элементами веб-страницы подобно встроенному элементу. Фактически такой элемент по
+                            своему
+                            действию похож на встраиваемые элементы (вроде тега <code>img</code>). При этом его
+                            внутренняя
+                            часть
+                            форматируется как блочный элемент, а сам элемент — как встроенный.</p>
+                        <p> Элемент <code> inline-table </code> Определяет, что элемент является таблицей как при
+                            использовании
+                            тега <code>table</code>, но при этом таблица является встроенным элементом и происходит ее
+                            обтекание
+                            другими элементами, например, текстом.</p>
+                        <p> Элемент <code> list-item </code> Элемент выводится как блочный и добавляется маркер
+                            списка.</p>
+                        <p> Элемент <code> none </code> Временно удаляет элемент из документа. Занимаемое им место
+                            не
+                            резервируется и веб-страница формируется так, словно элемента и не было. Изменить значение и
+                            сделать
+                            вновь видимым элемент можно с помощью скриптов, обращаясь к свойствам через объектную
+                            модель. В
+                            этом
+                            случае происходит переформатирование данных на странице с учетом вновь добавленного
+                            элемента.
+                        </p>
+                    </div>
+                    <div class="animer1">
+                        <p> Элемент <code> run-in </code> Устанавливает элемент как блочный или встроенный в
+                            зависимости от
+                            контекста.</p>
+                        <p> Элемент <code> table </code> Определяет, что элемент является блочной таблицей подобно
+                            использованию
+                            тега <code>table</code>.</p>
+                        <p> Элемент <code> table-caption </code> Задает заголовок таблицы подобно применению тега
+                            <code>caption</code>.
+                        </p>
+                        <p> Элемент <code> table-cell </code> Указывает, что элемент представляет собой ячейку
+                            таблицы (тег
+                            <code>td</code> или <code>th</code>).
+                        </p>
+                        <p> Элемент <code> table-column </code> Назначает элемент колонкой таблицы, словно был
+                            добавлен тег
+                            <code> col</code>.
+                        </p>
+                        <p> Элемент <code> table-column-group </code> Определяет, что элемент является группой
+                            одной или более
+                            колонок таблицы, как при использовании тега <code> colgroup</code>.</p>
+                        <p> Элемент <code> table-footer-group </code> Используется для хранения одной или
+                            нескольких строк
+                            ячеек, которые отображаются в самом низу таблицы. По своему действию сходно с работой тега
+                            <code>tfoot</code>.
+                        </p>
+                        <p> Элемент <code> table-header-group </code> Элемент предназначен для хранения одной или
+                            нескольких
+                            строк ячеек, которые представлены вверху таблицы. По своему действию сходно с работой тега
+                            <code>thead</code>.
+                        </p>
+                        <p> Элемент <code> table-row </code> Элемент отображается как строка таблицы (тег
+                            <code> tr</code>).
+                        </p>
+                        <p style="padding-bottom: 20px;"> Элемент <code> table-row-group </code> Создает структурный
+                            блок,
+                            состоящий из
+                            нескольких строк
+                            таблицы аналогично действию тега <code> tbody</code>.</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" id="toTop">
+                <svg width="10pt" height="10pt" viewBox="0 0 630 630" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                        <g>
+                            <path
+                                d="M489.229,442.468L254.563,37.135c-3.797-6.592-14.677-6.592-18.453,0L1.443,442.468c-1.92,3.307-1.92,7.36-0.021,10.667
+                    c1.92,3.307,5.44,5.333,9.259,5.333h469.333c3.819,0,7.339-2.027,9.259-5.333C491.128,449.849,491.128,445.775,489.229,442.468z" />
+                        </g>
+                    </g>
+                </svg>
+            </a>
+
+
+        </div>
+
+    </div>
+
+    <div class="container-fluid footer text-white">
+
+        <div class="container">
+            <div class="row row-lex" style="padding-bottom: 50px; margin-top: 100px;">
+                <div class="foterki" style="margin-left: 280px;">
+                    <a href="https://vk.com/" target="_blank" data-toggle="tooltip" title="ВКонтакте"><img
+                            class="footer__img" src="img/vk.png"></a><i>Наш ВКонтакте</i>
+                    <a href="https://www.instagram.com/apasniylife/" target="_blank" data-toggle="tooltip"
+                        title="Инстаграм" style="margin-left: 50px;"><img class="footer__img"
+                            src="img/instagram.png"></a><i>Наш Инстаграм</i>
+                    <a href="https://www.facebook.com/FollowWarzone/" target="_blank" data-toggle="tooltip"
+                        title="Фейсбук" style="margin-left: 50px;"><img class="footer__img"
+                            src="img/facebook.png"></a><i>Наш Фейсбук</i>
+                </div>
+
+            </div>
+            <div class="row" style="border-top: 1px solid hsla(0,0%,100%,.3); padding-bottom: 50px; padding-top: 50px;">
+                <div class="col">
+                    <p class="footer__block" style="color: hsla(0,0%,100%,.3);">&copy;2012–2021 Displayer<br>
+                        Все права защищены. Полное или частичное копирование материалов сайта без согласования с
+                        администрацией запрещено!
+                        Все названия компаний, торговых марок, логотипы и материалы являются собственностью
+                        соответствующих владельцев.</p>
+                </div>
+                <div class="col">
+                    <ul style="list-style: none; display: flex;">
+                        <li style="margin-right: 100px !important;">
+                            <a href="index.html" style="color: hsla(0,0%,100%,.3);">Главная <span
+                                    class="sr-only">(текущая)</span></a>
+                        </li>
+                        <li style="margin-right: 100px !important; ">
+                            <a href="kontakt.html" style="color: hsla(0,0%,100%,.3);">Контакты</a>
+                        </li>
+                        <li style="margin-right: 100px !important; ">
+                            <a href="komandaonas.html" style="color: hsla(0,0%,100%,.3);">Команда проекта</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+    <script src="js/myscript.js"></script>
+</body>
+
+</html>
