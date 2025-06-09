@@ -1,4 +1,23 @@
 [
-
-    
+    {
+        "Id": "Id1",
+        "name": "Test Template3",
+        "description": "Test Templat 4 e",
+        "subjectTemplate": "Hello4!",
+        "bodyTemplate": "Welcome to our platform. gdf s gdf s"
+    },
+    {
+        "Id": "Id2",
+        "name": "Test Template2",
+        "description": "Test Templat 2 e",
+        "subjectTemplate": "Hello4!4214",
+        "bodyTemplate": "Welcome to our platform.wrewa"
+    },
+    {
+        "Id": "Id3",
+        "name": "Test Template1",
+        "description": "Test Templat 2 e",
+        "subjectTemplate": "Hello!2",
+        "bodyTemplate": "Welcome to our platform.gdf  sdffdg gfds gdf s d"
+    }
 ]
